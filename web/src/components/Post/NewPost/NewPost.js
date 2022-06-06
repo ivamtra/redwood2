@@ -15,7 +15,7 @@ const NewPost = () => {
   const [createPost, { loading, error }] = useMutation(CREATE_POST_MUTATION, {
     onCompleted: () => {
       toast.success('Post created')
-      navigate(routes.posts())
+      navigate(routes.home())
     },
   })
 
