@@ -5,10 +5,7 @@ const AboutPage = () => {
     <>
       <MetaTags title="About" description="About page" />
 
-      <p className="font-light">
-        This site was created to demonstrate my mastery of Redwood: Look on my
-        works, ye mighty, and despair!
-      </p>
+      <p className="font-bold">This is a new Chinese Facebook like!</p>
     </>
   )
 }

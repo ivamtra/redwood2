@@ -34,12 +34,16 @@ const BlogLayout = ({ children }) => {
               </Link>
             </li>
             <li>
-              <Link
-                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
-                to={routes.newPost()}
-              >
-                Create a post
-              </Link>
+              {isAuthenticated ? (
+                <Link
+                  className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+                  to={routes.newPost()}
+                >
+                  Create a post
+                </Link>
+              ) : (
+                <p></p>
+              )}
             </li>
             <li>
               {isAuthenticated ? (
